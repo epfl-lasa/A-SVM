@@ -26,7 +26,7 @@ point for all the ```cpp/mex``` functions compiled before.
 ###LINUX
 Extract the ASVMLearning folder to any location.
 ```
->> cd <ASVMLearning_root_dir>
+>> cd <A-SVM_root_dir>
 >> mkdir build
 >> cd build
 >> ccmake ..
@@ -44,9 +44,17 @@ You can also choose to switch off the NLOPT option and in that case you will not
 use the NLOPT algorithms from the matlab gui.
 
 Once ASVMLearning.so is built, you need to compile the mex files from matlab. For that just run
-matlab from the ASVMLearning root folder and run "setup_path.m". This will take care of compiling
-all the mex interfaces and adding relevant folders to matlab path. If you get GLIBC_XXX errors on 
-calling the mex functions, you may try to run matlab using the provided script "run_matlab.sh".
+the following command in your matlab command line
+```
+>> setup_path.m 
+>> make 
+```
+This will take care of compiling all the mex interfaces and adding relevant folders to matlab path. If you get GLIBC_XXX errors on calling the mex functions, you may try to run matlab using the provided script "run_matlab.sh".
+
+To run the matlab widget call:
+```
+>> svm_widget.m 
+```
 
 ###WINDOWS
 Extract the ASVMLearning folder to any location.
