@@ -131,8 +131,9 @@ shading interp;
 colormap(clrmp);
 ctr_range = linspace(0,max_v,num_contours);
 [C,h]=contour(tempx, tempy, classifier_val,ctr_range(2:end), 'Color','k' );
+% [tmp, handles(handle_count)] = contour(tempx, tempy, classifier_val, 1e-10 - boundary,'Linewidth',3,'Color','k','Linestyle','--');
 
-[tmp, handles(handle_count)] = contour(tempx, tempy, classifier_val,boundary- 1e-10,'Linewidth',3,'Color','k','Linestyle','--');
+[tmp, handles(handle_count)] = contour(tempx, tempy, classifier_val, boundary, 'Linewidth',3,'Color','k','Linestyle','--');
 handle_count = handle_count+1;
 
 
