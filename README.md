@@ -1,4 +1,5 @@
-##### Augmented-SVM source code: version 1.0 
+Augmented-SVM source code: version 1.0 
+=======================
 Issued - Nov 1, 2012
 Updated - Nov 2, 2016
 
@@ -6,11 +7,11 @@ This package contains the algorithm for learning the Augmented-SVM
 classifier function for combining multiple non-linear dynamics. 
 The algorithm was presented in the paper:
 
-Shukla, A. and Billard, A. "Augmented-SVM: Automatic space partitioning 
-for combining multiple non-linear dynamics." Neural Information 
+Shukla, A. and Billard, A. ["Augmented-SVM: Automatic space partitioning 
+for combining multiple non-linear dynamics."](https://papers.nips.cc/paper/4654-augmented-svm-automatic-space-partitioning-for-combining-multiple-non-linear-dynamics.pdf) Neural Information 
 Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
-Package Structure
+##Package Structure
 =======================
 
 This package is organised as follows. The root folder contains cpp source 
@@ -23,17 +24,18 @@ in matlab/SVMWidget to draw trajectories using a mouse or stylus and call
 the various learning algorithms to get the A-SVM model. This is the calling
 point for all the cpp/mex functions compiled before. 
 
-Installation
+##Installation
 ========================
 
-LINUX
-------------
+###LINUX
 Extract the ASVMLearning folder to any location.
+```
 >> cd <ASVMLearning_root_dir>
 >> mkdir build
 >> cd build
 >> ccmake ..
 >> make
+```
 
 You may optionally choose NLOPT at the ccmake gui. You must have nlopt "make install"-ed
 somewhere on you filesystem. If you chose standard install location for NLOPT, ccmake 
@@ -50,15 +52,15 @@ matlab from the ASVMLearning root folder and run "setup_path.m". This will take 
 all the mex interfaces and adding relevant folders to matlab path. If you get GLIBC_XXX errors on 
 calling the mex functions, you may try to run matlab using the provided script "run_matlab.sh".
 
-WINDOWS
--------------
+###WINDOWS
 Extract the ASVMLearning folder to any location.
+```
 >> Create a build directory inside ASVMLearning
 >> run cmake-gui with source_folder=ASVMLearning and build_folder=ASVMLearning/build
 >> configure
 >> Optionally choose NLOPT (See above LINUX installation for details).
 >> generate
-
+```
 You must compile in the "Release" version otherwise the mex linkage will fail later on.
 
 Once ASVMLearning.so is built, you need to compile the mex files from matlab. For that just run
@@ -66,11 +68,10 @@ matlab from the ASVMLearning root folder and run "setup_path.m". This will take 
 all the mex interfaces and adding relevant folders to matlab path.
 
 
-ThirdParty
+##ThirdParty
 =========================
 
-Libsvm
-------------
+###Libsvm
 This package uses the function svmtrain from Libsvm. It contains a modified
 subset of the original libsvm source which additionally returns the indices 
 of the chosen support vectors within the model. Full version of Libsvm is 
@@ -78,14 +79,12 @@ available at
 [http://www.csie.ntu.edu.tw/~cjlin/libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm)
 Please read the COPYRIGHT file before using Libsvm.
 
-NLOPT
-----------------
+###NLOPT
 This package gives access to using all the NLOPT algorithms for learning the
 A-SVM model. NLOPT is available at
 http://ab-initio.mit.edu/wiki/index.php/NLopt
 
-IPOPT
-----------------
+###IPOPT
 This package can optionally use the IPOPT solver if it is compiled with its
 MATLAB interface. IPOPT is available at
 https://projects.coin-or.org/Ipopt
