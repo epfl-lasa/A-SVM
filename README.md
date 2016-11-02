@@ -13,7 +13,7 @@ Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
 
 <p align="center">
-<img src="https://github.com/epfl-lasa/ML_toolbox/blob/master/img/kernelPCA.png" width="390"><img src="https://github.com/epfl-lasa/ML_toolbox/blob/master/img/2D_circle.png" width="390">
+<img src="https://github.com/epfl-lasa/A-SVM/blob/master/img/class_1.png" width="390"><img src="https://github.com/epfl-lasa/A-SVM/blob/master/img/class_2.png" width="390">
 </p>
 
 ##Package Structure
