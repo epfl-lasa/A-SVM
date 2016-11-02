@@ -11,6 +11,11 @@ Shukla, A. and Billard, A. ["Augmented-SVM: Automatic space partitioning
 for combining multiple non-linear dynamics."](https://papers.nips.cc/paper/4654-augmented-svm-automatic-space-partitioning-for-combining-multiple-non-linear-dynamics.pdf) Neural Information 
 Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
+
+<p align="center">
+<img src="https://github.com/epfl-lasa/ML_toolbox/blob/master/img/kernelPCA.png" width="390"><img src="https://github.com/epfl-lasa/ML_toolbox/blob/master/img/2D_circle.png" width="390">
+</p>
+
 ##Package Structure
 This package is organised as follows. 
 - The root folder contains cpp source  files in ```src/``` and ```include/``` which are compiled using cmake into a library
