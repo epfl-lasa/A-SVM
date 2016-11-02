@@ -1,7 +1,7 @@
 Augmented-SVM source code: version 1.0 
 =======================
 Issued - Nov 1, 2012   
-Updated - Nov 2, 2016
+Updated - Nov 2, 2016 (plotting svm doesn't work in R2015a -- need to fix)
 
 This package contains the algorithm for learning the Augmented-SVM 
 classifier function for combining multiple non-linear dynamics. 
