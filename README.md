@@ -1,47 +1,16 @@
-Augmented-SVM source code: version 1.0 
+##### Augmented-SVM source code: version 1.0 
 Issued - Nov 1, 2012
+Updated - Nov 2, 2016
 
 This package contains the algorithm for learning the Augmented-SVM 
 classifier function for combining multiple non-linear dynamics. 
 The algorithm was presented in the paper:
 
-
 Shukla, A. and Billard, A. "Augmented-SVM: Automatic space partitioning 
 for combining multiple non-linear dynamics." Neural Information 
 Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%  Copyright (c) 2012 Ashwini Shukla, LASA, EPFL.  %%%%%%%%%%%
-%%%%%%%%%%%%%%%%%  CH-1015 Lausanne, Switzerland  %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%  http://lasa.epfl.ch  %%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-ThirdParty
-=========================
-
-Libsvm
-------------
-This package uses the function svmtrain from Libsvm. It contains a modified
-subset of the original libsvm source which additionally returns the indices 
-of the chosen support vectors within the model. Full version of Libsvm is 
-available at 
-http://www.csie.ntu.edu.tw/~cjlin/libsvm
-Please read the COPYRIGHT file before using Libsvm.
-
-NLOPT
-----------------
-This package gives access to using all the NLOPT algorithms for learning the
-A-SVM model. NLOPT is available at
-http://ab-initio.mit.edu/wiki/index.php/NLopt
-
-IPOPT
-----------------
-This package can optionally use the IPOPT solver if it is compiled with its
-MATLAB interface. IPOPT is available at
-https://projects.coin-or.org/Ipopt
-
-
-Structure
+Package Structure
 =======================
 
 This package is organised as follows. The root folder contains cpp source 
@@ -97,8 +66,31 @@ matlab from the ASVMLearning root folder and run "setup_path.m". This will take 
 all the mex interfaces and adding relevant folders to matlab path.
 
 
+ThirdParty
+=========================
+
+Libsvm
+------------
+This package uses the function svmtrain from Libsvm. It contains a modified
+subset of the original libsvm source which additionally returns the indices 
+of the chosen support vectors within the model. Full version of Libsvm is 
+available at 
+[http://www.csie.ntu.edu.tw/~cjlin/libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm)
+Please read the COPYRIGHT file before using Libsvm.
+
+NLOPT
+----------------
+This package gives access to using all the NLOPT algorithms for learning the
+A-SVM model. NLOPT is available at
+http://ab-initio.mit.edu/wiki/index.php/NLopt
+
+IPOPT
+----------------
+This package can optionally use the IPOPT solver if it is compiled with its
+MATLAB interface. IPOPT is available at
+https://projects.coin-or.org/Ipopt
 
 
-
+Current Maintainer: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387)
 
 
