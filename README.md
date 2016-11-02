@@ -12,15 +12,15 @@ for combining multiple non-linear dynamics."](https://papers.nips.cc/paper/4654-
 Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
 ##Package Structure
-This package is organised as follows. The root folder contains cpp source 
-files in src/ and include/ which are compiled using cmake into a library
-lib/ASVMLearning.so. This is then linked to the executable bin/train which
-is a command-line interface to the learning algorithm. The matlab/ folder
-contains mex interface to the main library and the function svmtrain from 
-libsvm. The ASVM utility functions are in matlab/SVMUtil. A GUI is provided
-in matlab/SVMWidget to draw trajectories using a mouse or stylus and call 
-the various learning algorithms to get the A-SVM model. This is the calling
-point for all the cpp/mex functions compiled before. 
+This package is organised as follows. 
+- The root folder contains cpp source  files in ```src/``` and ```include/``` which are compiled using cmake into a library
+``lib/ASVMLearning.so`` This is then linked to the executable ```bin/train``` which
+is a command-line interface to the learning algorithm. 
+- The ```matlab/``` folder contains mex interface to the main library and the function ```svmtrain``` from ```libsvm```.
+- The ASVM utility functions are in ```matlab/SVMUtil```.
+- A GUI is provided in ```matlab/SVMWidget``` to draw trajectories using a mouse or stylus and call the various learning algorithms to get the A-SVM model. This is the calling
+point for all the ```cpp/mex``` functions compiled before. 
+
 
 ##Installation
 ###LINUX
