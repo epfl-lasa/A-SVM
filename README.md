@@ -1,6 +1,6 @@
 Augmented-SVM source code: version 1.0 
 =======================
-Issued - Nov 1, 2012
+Issued - Nov 1, 2012   
 Updated - Nov 2, 2016
 
 This package contains the algorithm for learning the Augmented-SVM 
@@ -12,8 +12,6 @@ for combining multiple non-linear dynamics."](https://papers.nips.cc/paper/4654-
 Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
 ##Package Structure
-=======================
-
 This package is organised as follows. The root folder contains cpp source 
 files in src/ and include/ which are compiled using cmake into a library
 lib/ASVMLearning.so. This is then linked to the executable bin/train which
@@ -25,8 +23,6 @@ the various learning algorithms to get the A-SVM model. This is the calling
 point for all the cpp/mex functions compiled before. 
 
 ##Installation
-========================
-
 ###LINUX
 Extract the ASVMLearning folder to any location.
 ```
@@ -69,8 +65,6 @@ all the mex interfaces and adding relevant folders to matlab path.
 
 
 ##ThirdParty
-=========================
-
 ###Libsvm
 This package uses the function svmtrain from Libsvm. It contains a modified
 subset of the original libsvm source which additionally returns the indices 
