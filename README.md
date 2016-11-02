@@ -11,7 +11,7 @@ Shukla, A. and Billard, A. ["Augmented-SVM: Automatic space partitioning
 for combining multiple non-linear dynamics."](https://papers.nips.cc/paper/4654-augmented-svm-automatic-space-partitioning-for-combining-multiple-non-linear-dynamics.pdf) Neural Information 
 Processing Systems (NIPS) 2012. Tahoe, Nevada.
 
-Useful for: Automatic Space Partioning of multiple non-linear dynamics
+Useful for: Automatic Space Partitoning of multiple non-linear dynamics
 <p align="center">
 <img src="https://github.com/epfl-lasa/A-SVM/blob/master/img/class_1.png" width="290"><img src="https://github.com/epfl-lasa/A-SVM/blob/master/img/class_2.png" width="290">
 </p>
