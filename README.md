@@ -16,7 +16,7 @@ Useful for: Automatic Space Partitoning of multiple non-linear dynamics
 <img src="https://github.com/epfl-lasa/A-SVM/blob/master/img/class_1.png" width="290"><img src="https://github.com/epfl-lasa/A-SVM/blob/master/img/class_2.png" width="290">
 </p>
 
-##Package Structure
+## Package Structure
 This package is organised as follows. 
 - The root folder contains cpp source  files in ```src/``` and ```include/``` which are compiled using cmake into a library
 ``lib/ASVMLearning.so`` This is then linked to the executable ```bin/train``` which
@@ -27,8 +27,8 @@ is a command-line interface to the learning algorithm.
 point for all the ```cpp/mex``` functions compiled before. 
 
 
-##Installation
-###LINUX
+## Installation
+### LINUX
 Extract the A-SVM folder to any location.
 ```
 >> cd <A-SVM_root_dir>
@@ -61,7 +61,7 @@ To run the matlab widget call:
 >> svm_widget.m 
 ```
 
-###WINDOWS
+### WINDOWS
 Extract the ASVMLearning folder to any location.
 ```
 >> Create a build directory inside ASVMLearning
@@ -77,8 +77,8 @@ matlab from the ASVMLearning root folder and run "setup_path.m". This will take 
 all the mex interfaces and adding relevant folders to matlab path.
 
 
-##ThirdParty
-###Libsvm
+## ThirdParty
+### Libsvm
 This package uses the function svmtrain from Libsvm. It contains a modified
 subset of the original libsvm source which additionally returns the indices 
 of the chosen support vectors within the model. Full version of Libsvm is 
@@ -86,12 +86,12 @@ available at
 [http://www.csie.ntu.edu.tw/~cjlin/libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm)
 Please read the COPYRIGHT file before using Libsvm.
 
-###NLOPT
+### NLOPT
 This package gives access to using all the NLOPT algorithms for learning the
 A-SVM model. NLOPT is available at
 http://ab-initio.mit.edu/wiki/index.php/NLopt
 
-###IPOPT
+### IPOPT
 This package can optionally use the IPOPT solver if it is compiled with its
 MATLAB interface. IPOPT is available at
 https://projects.coin-or.org/Ipopt
